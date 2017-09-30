@@ -52,7 +52,7 @@ P (you | spam) = (1 + 1)/ (10 + 15)
 
 Like the above we will calculate for every word and multiply using the above probability. The results for the one who have higher probability won.
 
-You won Lottery belongs to spam category
+"You won Lottery"  belongs to spam category
 
 # Naive Bayes Multinomial Demo
 
