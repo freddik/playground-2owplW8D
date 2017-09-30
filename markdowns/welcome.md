@@ -1,11 +1,11 @@
 # Machine Learning with Java - Part 5 (Naive Bayes)
 
-In my previous article we have seen series of algorithms and this article describes about the Naive Bayes algorithm.The simplest solutions are the most powerful ones and Navie Bayes is the best example for the same.
+In my previous article we have seen series of algorithms :  [Linear Regression](https://tech.io/playgrounds/3771/machine-learning-with-java---part-1-linear-regression) , [Logistic Regression](https://tech.io/playgrounds/34a7ecd0a4487577f516d92548af66891284/machine-learning-with-java---part-2-logistic-regression) , [Nearest Neighbor](https://tech.io/playgrounds/5439/machine-learning-with-java---part-3-k-nearest-neighbor),[Decision Tree](https://tech.io/playgrounds/5844/machine-learning-with-java---part-4-decision-tree) and this article describes about the Naive Bayes algorithm.The simplest solutions are the most powerful ones and Navie Bayes is the best example for the same.
 
 
 # Naive Bayes
 
-Naive Bayes is a family of probablistic algorithm that takes an advantage of probability theory and Bayes theory to predict the category of sample.
+Naive Bayes is a family of probablistic algorithm that takes an advantage of probability theory and Bayes theory to predict the category of sample.A Naive Bayesian model is easy to build, with no complicated iterative parameter estimation which makes it particularly useful for very large datasets.
 
 # Example 
 
@@ -61,8 +61,26 @@ You won Lottery belongs to spam category
 
 In the above example, we have used the multinominal weka classifier for naive bayes. We can use other naive bayes classifier in weka.If you want to try out different classifier just instantiate the specific classifier in the code (Line number 64 in code) and work on the same.
 
-# Challenges with Naive Bayes
-
 # Advantages
 
-# Advanced techniques 
+1. Easy to understand and implement
+
+2. The classifier model is fast to build
+
+3. No optimisation is required 
+
+4. Easily updatebale if new training data is received
+
+5. Performance is good
+
+# Challenges with Naive Bayes
+
+Inspite of its many strengths and robust performance, there are well known weaknesses with this classification technique,
+
+1. Incomplete training Data - In our case also to overcome this , we have done smoothing so that the probability wont be zero if any of the words are not in training set.
+
+2. Continuous Variable - The probabailty computation by the traditional method of frequency count is not possible.
+
+3. Attreibute indepedence - This requires a little bit of extra effort. In the calculation of outcome probabilites , the implicit assumption is that all the attributes are mutually independent. This allows us to multiply the class conditional probabilities in order to compute the outcome probability.
+
+
