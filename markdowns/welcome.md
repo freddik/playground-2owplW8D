@@ -11,6 +11,8 @@ Naive Bayes is a family of probablistic algorithm that takes an advantage of pro
 
 To find whether an email is ham or spam, we have training samples listed below
 
+ <B> Training Data </B> ![Train Diagram](image.PNG)   
+
 now we will calculate which category the sentence "you won lottery" belongs to?
 Naive Bayes is a probablistic classifier. To determine whether an email is ham or spam, we want to calculate the probability that the sentence "you won lottery" is ham and the probability that its spam. After the calculation we will take the largest one.
 
